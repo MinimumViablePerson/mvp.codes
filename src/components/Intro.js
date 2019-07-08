@@ -23,10 +23,10 @@ const Intro = ({ className }) => {
     <div className={`flip-container ${flipped ? 'flip' : ''}`} onClick={flip}>
       <div className='flipper'>
         <div className='front'>
-          <h1><span>Nicolas Marcora</span></h1>
+          <h1><span>&lt;Nicolas Marcora /&gt;</span></h1>
         </div>
         <div className='back'>
-          <h1><span>MinimumViablePerson</span></h1>
+          <h1><span>&lt;MinimumViablePerson /&gt;</span></h1>
         </div>
       </div>
     </div>
@@ -48,10 +48,6 @@ const StyledIntro = styled(Intro)`
 
   #im {
     width: 100%;
-  }
-
-  h2 {
-    font-weight: 300;
   }
 
   animation: 1s ${animation} ease-out;
@@ -103,6 +99,12 @@ const StyledIntro = styled(Intro)`
   .back {
     transform: rotateY(180deg);
   }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+  } 
 `
 
 export default StyledIntro

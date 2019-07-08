@@ -36,6 +36,7 @@ const StyledIcons = styled(Icons)`
     margin: 0 10px;
     animation: 1s ${fadeIn};
     transition: 1s ease-in-out;
+    fill: #333;
 
     &:hover {
       transform: rotate(-10deg);
