@@ -19,9 +19,9 @@ const animation = keyframes`
 
 const Icons = ({ className }) =>
   <div className={className}>
-    <a rel="noopener noreferrer" target='_blank' href='https://twitter.com/NicolasMarcora'><Twitter /></a>
-    <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/nmarcora/'><LinkedIn /></a>
-    <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@nicolasmarcora'><Medium /></a>
+    <a title='Twitter' rel="noopener noreferrer" target='_blank' href='https://twitter.com/NicolasMarcora'><Twitter /></a>
+    <a title='LinkedIn' rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/nmarcora/'><LinkedIn /></a>
+    <a title='Medium' rel="noopener noreferrer" target='_blank' href='https://medium.com/@nicolasmarcora'><Medium /></a>
   </div>
 
 const StyledIcons = styled(Icons)`
@@ -36,7 +36,7 @@ const StyledIcons = styled(Icons)`
     transition: 700ms ease-in-out;
 
     &:hover {
-      fill: rgba(29,161,242);
+      fill: rgba(9,141,222);
       transform: rotate(360deg);
     }
   }

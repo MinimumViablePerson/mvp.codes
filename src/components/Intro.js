@@ -29,7 +29,7 @@ const StyledIntro = styled(Intro)`
   animation: 1s ${animation} ease-out;
 
   span {
-    color: rgba(29,161,242,1.00);
+    color: rgba(9,141,222);
     font-weight: 600;
   }
 `
