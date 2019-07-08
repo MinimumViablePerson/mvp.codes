@@ -18,7 +18,6 @@ const Background = ({ className }) =>
 const animation = keyframes`
   0%{
       transform: translateY(0) rotate(0deg);
-      opacity: 1;
       border-radius: 30%;
   }
 
@@ -55,6 +54,7 @@ const StyledBackground = styled(Background)`
     width: 80px;
     height: 80px;
     animation-delay: 0s;
+    opacity: 1;
   }
 
 
@@ -64,6 +64,7 @@ const StyledBackground = styled(Background)`
     height: 20px;
     animation-delay: 2s;
     animation-duration: 12s;
+    opacity: 0.4;
   }
 
   li:nth-child(3) {
@@ -71,6 +72,7 @@ const StyledBackground = styled(Background)`
     width: 20px;
     height: 20px;
     animation-delay: 4s;
+    opacity: 0.4;
   }
 
   li:nth-child(4) {
@@ -79,6 +81,7 @@ const StyledBackground = styled(Background)`
     height: 60px;
     animation-delay: 0s;
     animation-duration: 18s;
+    opacity: 0.8;
   }
 
   li:nth-child(5) {
@@ -86,6 +89,7 @@ const StyledBackground = styled(Background)`
     width: 20px;
     height: 20px;
     animation-delay: 0s;
+    opacity: 0.4;
   }
 
   li:nth-child(6) {
@@ -93,6 +97,7 @@ const StyledBackground = styled(Background)`
     width: 10px;
     height: 10px;
     animation-delay: 3s;
+    opacity: 0.3;
   }
 
   li:nth-child(7) {
@@ -100,6 +105,7 @@ const StyledBackground = styled(Background)`
     width: 45px;
     height: 45px;
     animation-delay: 7s;
+    opacity: 0.6;
   }
 
   li:nth-child(8) {
@@ -108,6 +114,7 @@ const StyledBackground = styled(Background)`
     height: 25px;
     animation-delay: 15s;
     animation-duration: 45s;
+    opacity: 0.3;
   }
 
   li:nth-child(9) {
@@ -116,6 +123,7 @@ const StyledBackground = styled(Background)`
     height: 15px;
     animation-delay: 2s;
     animation-duration: 35s;
+    opacity: 0.3;
   }
 
   li:nth-child(10) {
@@ -124,6 +132,7 @@ const StyledBackground = styled(Background)`
     height: 35px;
     animation-delay: 0s;
     animation-duration: 11s;
+    opacity: 0.6;
   }
 `
 
