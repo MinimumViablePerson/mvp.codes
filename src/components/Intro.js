@@ -22,8 +22,14 @@ const Intro = ({ className }) =>
 const StyledIntro = styled(Intro)`
   width: 100%;
   text-align: center;
+
   h1 {
     font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-weight: 300;
   }
 
   animation: 1s ${animation} ease-out;

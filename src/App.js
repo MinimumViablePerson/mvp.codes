@@ -3,12 +3,14 @@ import styled from 'styled-components'
 
 import Intro from './components/Intro'
 import Icons from './components/Icons'
+import Background from './components/Background'
 
 const App = ({ className }) =>
   <div className={className}>
     <div style={{ width: '100%'}}></div>
     <Intro />
     <Icons />
+    <Background />
   </div>
 
 const StyledApp = styled(App)`
