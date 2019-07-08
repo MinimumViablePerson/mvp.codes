@@ -1,21 +1,9 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 import { ReactComponent as Twitter } from '../images/twitter.svg'
 import { ReactComponent as LinkedIn } from '../images/linkedin.svg'
 import { ReactComponent as Medium } from '../images/medium.svg'
-
-const animation = keyframes`
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-`
 
 const Icons = ({ className }) =>
   <div className={className}>

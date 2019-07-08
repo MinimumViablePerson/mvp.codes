@@ -17,7 +17,7 @@ const StyledApp = styled(App)`
   justify-content: center;
   flex-wrap: wrap;
 
-  height: 100vh;
+  min-height: -webkit-fill-available;
 `
 
 export default StyledApp
