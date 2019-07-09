@@ -35,7 +35,7 @@ const StyledIcons = styled(Icons)`
     height: 60px;
     margin: 0 10px;
     animation: 1s ${fadeIn};
-    transition: 600ms ease-in-out;
+    transition: 300ms ease-in-out;
     fill: #333;
 
     &:hover {
