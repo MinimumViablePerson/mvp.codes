@@ -1,13 +1,13 @@
-
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
-const Background = ({ className }) =>
+const Background = ({ className }) => (
   <div className={className}>
-    <div className="bg"></div>
-    <div className="bg bg2"></div>
-    <div className="bg bg3"></div>
+    <div className='bg' />
+    <div className='bg bg2' />
+    <div className='bg bg3' />
   </div>
+)
 
 const animation = keyframes`
   0% {
@@ -24,7 +24,7 @@ const StyledBackground = styled(Background)`
     background-image: linear-gradient(-60deg, #fafafa 50%, #ffffff 50%);
     bottom: 0;
     left: -50%;
-    opacity: .5;
+    opacity: 0.5;
     position: fixed;
     right: -50%;
     top: 0;
@@ -32,7 +32,7 @@ const StyledBackground = styled(Background)`
   }
 
   .bg2 {
-    animation-direction:alternate-reverse;
+    animation-direction: alternate-reverse;
     animation-duration: 60s;
   }
 

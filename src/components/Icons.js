@@ -18,13 +18,46 @@ const fadeIn = keyframes`
   }
 `
 
-const Icons = ({ className }) =>
+const Icons = ({ className }) => (
   <div className={className}>
-    <a id='twitter' title='Twitter' rel="noopener noreferrer" target='_blank' href='https://twitter.com/NicolasMarcora'><Twitter /></a>
-    <a id='linkedin' title='LinkedIn' rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/nmarcora/'><LinkedIn /></a>
-    <a id='medium' title='Medium' rel="noopener noreferrer" target='_blank' href='https://medium.com/@nicolasmarcora'><Medium /></a>
-    <a id='github' title='Github' rel="noopener noreferrer" target='_blank' href='https://github.com/MinimumViablePerson'><Github /></a>
+    <a
+      id='twitter'
+      title='Twitter'
+      rel='noopener noreferrer'
+      target='_blank'
+      href='https://twitter.com/NicolasMarcora'
+    >
+      <Twitter />
+    </a>
+    <a
+      id='linkedin'
+      title='LinkedIn'
+      rel='noopener noreferrer'
+      target='_blank'
+      href='https://www.linkedin.com/in/nmarcora/'
+    >
+      <LinkedIn />
+    </a>
+    <a
+      id='medium'
+      title='Medium'
+      rel='noopener noreferrer'
+      target='_blank'
+      href='https://medium.com/@nicolasmarcora'
+    >
+      <Medium />
+    </a>
+    <a
+      id='github'
+      title='Github'
+      rel='noopener noreferrer'
+      target='_blank'
+      href='https://github.com/MinimumViablePerson'
+    >
+      <Github />
+    </a>
   </div>
+)
 
 const StyledIcons = styled(Icons)`
   width: 100%;

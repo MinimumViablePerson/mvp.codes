@@ -18,19 +18,25 @@ const Intro = ({ className }) => {
 
   const flip = () => setFlipped(!flipped)
 
-  return <div className={className}>
-    <h1 id='im'>I'm</h1>
-    <div className={`flip-container ${flipped ? 'flip' : ''}`} onClick={flip}>
-      <div className='flipper'>
-        <div className='front'>
-          <h1><span>&lt;Nicolas Marcora /&gt;</span></h1>
-        </div>
-        <div className='back'>
-          <h1><span>&lt;MinimumViablePerson /&gt;</span></h1>
+  return (
+    <div className={className}>
+      <h1 id='im'>I'm</h1>
+      <div className={`flip-container ${flipped ? 'flip' : ''}`} onClick={flip}>
+        <div className='flipper'>
+          <div className='front'>
+            <h1>
+              <span>&lt;Nicolas Marcora /&gt;</span>
+            </h1>
+          </div>
+          <div className='back'>
+            <h1>
+              <span>&lt;MinimumViablePerson /&gt;</span>
+            </h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  )
 }
 
 const StyledIntro = styled(Intro)`
@@ -53,7 +59,7 @@ const StyledIntro = styled(Intro)`
   animation: 1s ${animation} ease-out;
 
   span {
-    color: rgba(9,141,222);
+    color: rgba(9, 141, 222);
     font-weight: 600;
     cursor: pointer;
   }
@@ -66,7 +72,9 @@ const StyledIntro = styled(Intro)`
     transform: rotateY(180deg);
   }
 
-  .flip-container, .front, .back {
+  .flip-container,
+  .front,
+  .back {
     width: 100%;
     height: 50px;
   }
@@ -80,7 +88,8 @@ const StyledIntro = styled(Intro)`
   }
 
   /* hide back of pane during swap */
-  .front, .back {
+  .front,
+  .back {
     backface-visibility: hidden;
 
     position: absolute;
@@ -104,7 +113,7 @@ const StyledIntro = styled(Intro)`
     h1 {
       font-size: 2rem;
     }
-  } 
+  }
 `
 
 export default StyledIntro
