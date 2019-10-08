@@ -32,7 +32,7 @@ const StyledToggle = styled(Toggle)`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #00000060;
+    background-color: rgba(39, 171, 252);
     transition: 0.4s;
   }
 
@@ -49,16 +49,15 @@ const StyledToggle = styled(Toggle)`
     ${props =>
     props.darkMode
       ? `
-      background-color: transparent;
-      border-radius: 50%;
-      box-shadow: inset -12px 5px 0 -2px #fff;
-
-          `
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: inset -12px 5px 0 -2px #fff;
+      `
       : `
-      background-color: #fff;
-      box-shadow: inset -12px 5px 0 20px #ff0;
-      border-radius: 0.3rem;
-          `}
+        background-color: #fff;
+        box-shadow: inset -12px 5px 0 20px #eddd5b;
+        border-radius: 0.3rem;
+      `}
   }
 
   input:checked + .slider {
