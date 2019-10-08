@@ -13,7 +13,7 @@ const animation = keyframes`
   }
 `
 
-const Intro = ({ className }) => {
+const Intro = ({ className = '' }) => {
   const [flipped, setFlipped] = useState(false)
 
   const flip = () => setFlipped(!flipped)
@@ -59,7 +59,8 @@ const StyledIntro = styled(Intro)`
   animation: 1s ${animation} ease-out;
 
   span {
-    color: rgba(9, 141, 222);
+    transition: color 1s;
+    color: ${props => props.theme.font.colors.highlight};
     font-weight: 600;
     cursor: pointer;
   }

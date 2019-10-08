@@ -18,7 +18,7 @@ const fadeIn = keyframes`
   }
 `
 
-const Icons = ({ className }) => (
+const Icons = ({ className = '' }) => (
   <div className={className}>
     <a
       id='twitter'
@@ -69,7 +69,7 @@ const StyledIcons = styled(Icons)`
     margin: 0 10px;
     animation: 1s ${fadeIn};
     transition: 300ms ease-in-out;
-    fill: #333;
+    fill: ${props => props.theme.font.colors.main};
 
     &:hover {
       transform: rotate(-8deg);
