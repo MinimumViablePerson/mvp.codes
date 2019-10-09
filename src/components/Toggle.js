@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
-const Toggle = ({ className, toggleDarkMode }) => (
+const Toggle = ({ className, toggleDarkMode, darkMode }) => (
   <label className={className}>
     <input
       aria-label='dark mode toggle'
       type='checkbox'
+      checked={darkMode}
       onChange={toggleDarkMode}
     />
     <span />
