@@ -1,31 +1,38 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
-const Toggle = ({ className, darkMode, toggleDarkMode }) => (
-  <label className={`switch ${className}`}>
-    <input type='checkbox' onChange={toggleDarkMode} />
-    <span className='slider round' />
+const Toggle = ({ className, toggleDarkMode }) => (
+  <label className={className}>
+    <input
+      aria-label='dark mode toggle'
+      type='checkbox'
+      onChange={toggleDarkMode}
+    />
+    <span />
   </label>
 )
 
+Toggle.propTypes = {
+  className: PropTypes.string,
+  toggleDarkMode: PropTypes.func.isRequired
+}
+
 const StyledToggle = styled(Toggle)`
-  /* The switch - the box around the slider */
   position: absolute;
-  width: 60px;
+  width: 34px;
   height: 34px;
   top: 20px;
   right: 20px;
 
-  /* Hide default HTML checkbox */
   & input {
     opacity: 0;
     width: 0;
     height: 0;
   }
 
-  /* The slider */
-  .slider {
+  span {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -34,51 +41,35 @@ const StyledToggle = styled(Toggle)`
     bottom: 0;
     background-color: rgba(39, 171, 252);
     transition: 0.4s;
+    border-radius: 34px;
   }
 
-  .slider:before {
+  span:before {
     position: absolute;
     content: '';
     height: 26px;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    transition: 0.5s ease-out;
 
-    ${props =>
-    props.darkMode
-      ? `
-        background-color: transparent;
-        border-radius: 50%;
-        box-shadow: inset -12px 5px 0 -2px #fff;
-      `
-      : `
-        background-color: #fff;
-        box-shadow: inset -12px 5px 0 20px #eddd5b;
-        border-radius: 0.3rem;
-      `}
+    background-color: #fff;
+    box-shadow: inset -12px 5px 0 20px #eddd5b;
+    border-radius: 50%;
   }
 
-  input:checked + .slider {
+  input:checked + span {
     background-color: #ffffffaa;
   }
 
-  input:focus + .slider {
+  input:focus + span {
     box-shadow: 0 0 1px #ffffffaa;
   }
 
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-
-  .slider.round:before {
+  input:checked + span:before {
+    background-color: transparent;
     border-radius: 50%;
+    box-shadow: inset -12px 5px 0 -2px #fff;
   }
 `
 
