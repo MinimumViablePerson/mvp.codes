@@ -25,7 +25,7 @@ const StyledApp = styled(App)`
   justify-content: center;
   flex-wrap: wrap;
 
-  min-height: -webkit-fill-available;
+  min-height: 100vh;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
