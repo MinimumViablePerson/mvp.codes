@@ -26,7 +26,7 @@ function useMedia (queries, values, defaultValue) {
       // Remove listeners on cleanup
       return () => mediaQueryLists.forEach(mql => mql.removeListener(handler))
     },
-    [] // Empty array ensures effect is only run on mount and unmount
+    [mediaQueryLists, getValue] // Empty array ensures effect is only run on mount and unmount
   )
 
   return value
